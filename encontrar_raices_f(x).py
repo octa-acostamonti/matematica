@@ -78,7 +78,7 @@ def encontrar_divisores_terminos(terminoIndependiente, coeficientePrincipal):
 
 def encontrar_raices(divisoresterminoIndependiente, divisorescoeficientePrincipal, polinomio):
     # Iniciar una lista vacía de las raíces encontradas
-    roots = []
+    raices = []
 
     # Dividir cada divisor del Término Independiente por cada divisor del Coeficiente Principal
     for divisor_tI in divisoresterminoIndependiente:
@@ -90,12 +90,12 @@ def encontrar_raices(divisoresterminoIndependiente, divisorescoeficientePrincipa
             
             # Si la evaluación es cercana a cero, considerar el resultado como una raíz
             if abs(y) < 1e-6:
-                roots.append(resultado)
+                raices.append(resultado)
     
-    if len(roots) == 0:
+    if len(raices) == 0:
         print("No se encontraron raíces.")
     else:
-        print("Raíces encontradas:", roots)
+        print("Raíces encontradas:", raices)
 
 if __name__ == "__main__":
     main()
