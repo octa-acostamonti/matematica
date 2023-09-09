@@ -38,6 +38,6 @@ for divisor_tI in divisoresterminoIndependiente:
 
 print("Roots of the polynomial:")
 for x in terminoInd_coefPri:
-    y = 6*((x)**3) + 11*((x)**2) - 4*(x) - 4
+    y = eval(polynomial)
     if abs(y) < 1e-6:
         print(f"Root found for x = {x}: y = {y}")
